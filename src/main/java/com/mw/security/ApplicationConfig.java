@@ -47,20 +47,6 @@ public class ApplicationConfig  implements WebMvcConfigurer {
     return new BCryptPasswordEncoder();
   }
 
-//  @Override
-//  public void addCorsMappings(CorsRegistry registry) {
-//    registry.addMapping("/api/v1/auth")
-//            .allowedOrigins("http://localhost:3000")
-//            .allowedMethods(CorsConfiguration.ALL)
-//            .allowedHeaders(CorsConfiguration.ALL)
-//            .allowCredentials(true)
-//            .maxAge(3600L)
-//            .exposedHeaders(CorsConfiguration.ALL)
-//    ;
-//            .exposedHeaders(CorsConfiguration.ALL)
-//  }
-//            .allowedOrigins("http://localhost:3000","https://www.wewehappy.com:3000","https://www.wewehappy.com","https://api.wewehappy.com")
-
   @Override
   public void addCorsMappings(CorsRegistry registry) {
     registry.addMapping("/**")
